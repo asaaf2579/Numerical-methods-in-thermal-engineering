@@ -7,7 +7,7 @@ Convince yourself computationally that matrix product is not commutative: i.e. A
 #include <iostream>
 #include <vector> // for dynamic initialisation of matrix
 using namespace std;
-// addition of two matrices
+
 int main(){
     int rows,cols;
     cout<<"enter the no of rows and cols: \n";
@@ -54,4 +54,5 @@ int main(){
 
     // finally by seeing the products one can verify that AB is not necessarily be equal to BA
     return 0;
+
 }
