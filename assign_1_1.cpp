@@ -29,13 +29,29 @@ int main(){
             cin>>B[i][j];
         }
     } 
+    /* 
+        Struggling with how to visualise matrix multiplication, here is how I tackled it:
+    lets say we have two matrices A(m*n) and B(n*p), we multiply both A and B to get C(m*p)
+    let i varies from 1 to m
+    j varies from 1 to p
+    k varies from 1 to n
+    C=Cij, A=Aik, B=Bkj
+    Cij = ai1*b1j + ai2*b2j + ........+ aik*bkj +..................+ ain*bnj
+    draw matrices with aik and bkj vectors only and multiply them u get the above equation, for better visualisation
+    so Cij = Sigma(k=1 to n) {aik*bkj}
+    Now i and j vary from 1 to m and 1 to p, respectively
+    For programming, see the code below on how it is done.
+    Make sure to initialise C with zero to avoid garbage values
+    Still facing a problem, take a pen and paper, do the above steps :)
+    */
+    
+    
     // lets do the product AB and BA
-    for(int i=0;i<rows; i++){                   //3 loops to do the matrix multiplication
-        for(int j=0;j<cols; j++){               //k is a dummy variable so that when j gets updated it doesnt change 
-                                                //the column of resulting matrix
+    for(int i=0;i<rows; i++){                   
+        for(int j=0;j<cols; j++){                                              
             for(int k=0; k<cols; k++){
-                AB[i][j]+=A[i][j]*B[j][i];
-                BA[i][j]+=B[i][j]*A[j][i];
+                AB[i][j]+=A[i][k]*B[k][j];
+                BA[i][j]+=B[i][k]*A[k][j];
             }
         }
     }
@@ -56,3 +72,4 @@ int main(){
     return 0;
 
 }
+
