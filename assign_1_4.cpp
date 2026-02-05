@@ -1,6 +1,10 @@
 // Faisal M S
 //ME23B105
-//
+/*4. Let X and Y be thin matrices (size m × n, such that m > n) and z be a vector of size
+m × 1. Compute XYTz as (a) X(YTz) and (b) (XYT)z. Compare the time it takes between
+the two for (m, n) = (256, 8), (m, n) = (512, 8), (m, n) = (1024, 8), (m, n) = (2048, 8),
+(m, n) = (4096, 8). Plot the time taken as a function of m. (40 points)*/
+
 #include <iostream>
 #include <vector> //vector
 #include <cstdlib> //random numbers
@@ -96,4 +100,5 @@ for(int i=0;i<5;i++){
  (m,n)=(1024,8) X(YTz) t=0.000178 seconds,  (XYT)z t=0.115125 seconds
  (m,n)=(2048,8) X(YTz) t=0.000524 seconds,  (XYT)z t=0.48112 seconds
  (m,n)=(4096,8) X(YTz) t=0.000711 seconds,  (XYT)z t=1.96293 seconds
+
 */
