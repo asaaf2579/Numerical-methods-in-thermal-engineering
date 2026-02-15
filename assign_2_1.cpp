@@ -1,3 +1,12 @@
+/*
+1. (30 points) Write a program that performs Gaussian elimination for a square system of size n × n. Consider writing
+it as a modular program with separate functions or subroutines that perform forward-elimination and backward-
+substitution. To test the program, solve the system Ax = b of order n, with A = [aij ] defined by
+aij = max(i, j).
+Also define b = [1, 1, ..., 1]T. Solve the system to obtain the solution vector x, for n = 32, 128, 512, 1024. 
+*/
+
+
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -76,3 +85,4 @@ n=128 1/Sig(xi^2)= 16384
 n=512 1/Sig(xi^2)= 262144
 n=1024 1/Sig(xi^2)= 1.04858e+06
 */
+
